@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Title of Work</title>
+        <author>Name of Author</author>
+        <editor>Name of Editor</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>First Edition</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Society for Classical Studies</publisher>
+        <distributor>Digital Latin Library</distributor>
+        <date>2016</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+            Creative Commons Attribution 4.0 International License.</licence>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s">Library of Digital Latin Texts</title>
+        <biblScope unit="vol">1</biblScope>
+      </seriesStmt>
+      <sourceDesc>
+        <p>Born digital.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <front xml:id="front">
+      <div type="section" xml:id="preface">
+        <head>Preface</head>
+        <p>General introductory remarks about the edition.</p>
+        <div type="section" xml:id="preface-section-1">
+          <!--This is a section within the preface. Editors should use
+          sections (distinguished by <div>) to organize the content of the edition's preface.-->
+        </div>
+      </div>
+      <div type="section" xml:id="bibliography">
+        <head>Bibliography</head>
+        <!--This is where the bibliography for the edition is listed, including manuscript
+        descriptions, and lists of early editions, modern editions, and other sources cited
+        in the current edition. For more information on encoding the items in the bibliography
+        see section 3 Bibliography below. -->
+        <div type="section" xml:id="conspectus">
+          <head>Conspectus</head>
+          <!--A key to the special sigla and abbreviations used in the edition (drawn
+          from the @xml:id's assigned to the various items in the
+          bibliography). The list of sigla may be generated automatically. -->
+        </div>
+      </div>
+    </front>
+    <body>
+      <!-- list person -->
+      <listPerson>
+        <!-- MOTHER -->
+        <listPerson>
+          <person xml:id="mother">
+            <persName>Mother</persName>
+          </person>
+          <listPerson>
+            <person xml:id="mother1">
+              <persName>Mother in Declamation 1</persName>
+            </person>
+            <person xml:id="mother2">
+              <persName>Mother in Declamation 2</persName>
+            </person>
+          </listPerson>
+        </listPerson>
+        <!-- FATHER -->
+        <listPerson>
+          <person xml:id="father">
+            <persName>Father</persName>
+          </person>
+          <listPerson>
+            <person xml:id="father1"><persName>Father in Declamation 4</persName></person>
+          </listPerson>
+        </listPerson>
+      </listPerson>
+      <div type="edition" xml:id="edition-text" xml:space="preserve">
+        <div type="textpart" n="1" xml:id="part1">
+          <head>Title of First Part</head>
+          <!--Text goes here, according to the conventions laid out elsewhere in these guidelines.-->
+          <!-- speeches indication: inside an app/lem => to XXX (and give credit to Aizpurua 
+            example: <app><lem wit="aizpurua">(to the judges) </lem><rdg wit="..."/></app>-->
+          <!-- declamation division: head (=title), situation-div: law, theme (seg), speech-subtype:defense (div, seg) speech-subtype:accusation (div, seg)
+              -->
+          <ab>Damnatus parricidii anno custodiatur.</ab> 
+          <ab>Qui sub noverca damnatus est, vult illum pater domi custodire. ille petit, ut publico 	
+carcere servetur.</ab>
+<ab>Iubete quam primum ad illas me impiorum tenebras trahi. 	
+liceat impetrare quod non licet recusare. Ego me umquam 	5
+crederem tam infelicem, ut mihi aliquis etiam carcerem in- 	
+videat? Parum est tibi in cruciatus meos annus et carcer; 	
+vereris, ne quem gemitum miseri aures tuae perdant, ne non 	
+singulis tormentis meis paterni oculi fruantur, ne laxata vincula 	
+desit qui astringat. Non potes adversus damnatum iure patris 	10
+uti: iam non larem habeo, non sacrum, non patrem, ac, ne 	
+damnatum esse paeniteat, non novercam. Video carcerem 	
+publicum, saxis ingentibus structum, angustis foraminibus 	
+tenuem lucis umbram recipientem. in hunc rei abiecti robur 	
+Tullianumque prospiciunt, et, quotiens iacentes ferrati postis 	15
+stridor excitat, exanimantur, et alienum supplicium [ex]spec- 	
+tando suum discunt. sonant verbera, cibus recusantibus spurca 	
+manu carnificis ingeritur. sedet ianitor inexorabili pectore, qui 	
+matre flente siccos teneat oculos. inluvies corpus exasperat, 	
+manum catenae premunt. Quid est, quod me lex anno reservat, 	20
+nescioquid diu cogitat? nimirum de parricidio, etiam cum 	
+creditur, non liquet. Aestimate, iudices, quid fugiam, qui hoc 	
+postulo! Quid hoc est, iudices, a patre parricida non timeor? 	
+Dicam "saevite" cum rogem? dicam "miseremini" cum car- 	
+cerem rogem? 	25</ab>
+<ab>Pars altera 	
+Egone secretum isti conscientiae dabo et ibi te patiar includi, 	
+ubi non erubescas? dignus es, parricida, dignus es videre 	
+patrem, si tam grave putas, ut vel carcerem malis. Debeo, 	
+iudices, debeo tandem agere mitius pater, si tam graviter sibi 	
+damnatus irascitur. Mirabar, si quis tantum sceleris auderet, 	30
+qui&lt;n&gt; contemnere carcerem posset. Fugit, odit, avertitur et 	
+limen patris execratur: ignoras profecto sortem tuam, si putas 	
+aliud iudices debere respicere, quam quod nolis. hanc lucem 	
+patere, si gravis est, hunc diem, si odisti, vide. Nihil illi adversus 	
+patrem liceret, si parricida non esset. </ab>
+        </div>
+        <div type="textpart" n="2" xml:id="part2">
+          <head>Title of Second Part</head>
+          <!--Each new major section (e.g., book, volume) has a new <div>.-->
+        </div>
+      </div>
+    </body>
+    <back>
+      <!--The content of the back matter will be determined in consultation between
+      the editor and the staff of the DLL. Because LDLT editions are encoded, the
+      matter traditionally found in the back of a printed critical edition may be
+      generated by applications instead of having to be entered manually.
+      Nevertheless, there is space here for notes, indices, and other kinds of
+      information.-->
+    </back>
+  </text>
+</TEI>
