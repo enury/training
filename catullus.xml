@@ -52,8 +52,8 @@
           from the @xml:id's assigned to the various items in the
           bibliography). The list of sigla may be generated automatically. -->
           <listWit>
-            <witness xml:id="servius"><abbr type="siglum">Servius</abbr></witness>
-            <witness xml:id="pastr"><abbr type="siglum">Pastrengicus</abbr></witness>
+            <witness xml:id="servius"><abbr type="siglum">Servius </abbr></witness>
+            <witness xml:id="pastr"><abbr type="siglum">Pastrengicus </abbr></witness>
             <witness xml:id="V"><abbr type="siglum">V</abbr> = fons communis codicum OGR
               <listWit>
                 <witness xml:id="O"><abbr type="siglum">O</abbr> = Oxoniensis Bodleianus Canonicianus
@@ -75,9 +75,9 @@
             <witness xml:id="epsilon"><abbr type="siglum">ε</abbr> = <title>Consensus of e1, e2, and e3</title><!-- listWit -->Mediolanensis Braidensis AD xii
               37, no. 2; Brixianus bibliothecae Querinianae A vii 7; Londiniensis bibliothecae Britannicae Harleianus 2574</witness>
             <witness xml:id="eta"><abbr type="siglum">η</abbr> = Vincentinus; etc.</witness>
-            <witness xml:id="statius"><abbr type="siglum">Statius</abbr></witness>
+            <witness xml:id="statius"><abbr type="siglum">Statius </abbr></witness>
             <witness xml:id="ed1472"><abbr type="siglum">1472</abbr> = ed. Veneta</witness>
-            <witness xml:id="bergk"><abbr type="siglum">Bergk</abbr></witness>
+            <witness xml:id="bergk"><abbr type="siglum">Bergk</abbr></witness><!-- or source? -->
           </listWit>
         </div>
       </div>
@@ -87,7 +87,7 @@
         <div type="textpart" n="1" xml:id="poem1">
           <head>1</head>
           <l n="1">Cui dono lepidum novum libellum</l>
-          <l n="2"><app><lem wit="#pastr #servius #V" xml:id="l2lem1">arida</lem><witDetail wit="#V" target="#l2lem1">?</witDetail><rdg wit="#O #G #R">arido</rdg></app> modo <app><lem xml:id="l2lem2">pumice</lem><rdg wit="#R">punice</rdg><witDetail wit="#R" target="#l2lem2">corr. <ref target="#R2">R<hi rend="superscript">2</hi></ref></witDetail></app> expolitum?</l>
+          <l n="2"><app><lem wit="#servius #pastr #V" xml:id="l2lem1">arida</lem><witDetail wit="#V" target="#l2lem1">?</witDetail><rdg wit="#O #G #R">arido</rdg></app> modo <app><lem xml:id="l2lem2">pumice</lem><rdg wit="#R">punice</rdg><witDetail wit="#R" target="#l2lem2">corr. <ref target="#R2">R<hi rend="superscript">2</hi></ref></witDetail></app> expolitum?</l>
           <l n="3">Corneli, tibi: namque tu solebas</l>
           <l n="4">meas esse aliquid putare nugas</l>
           <l n="5">iam <app><lem wit="#epsilon">tum</lem><rdg wit="#V">tamen</rdg></app>, cum ausus <app><lem wit="#epsilon">es</lem><rdg wit="#V">est</rdg></app> unus Italorum</l>
